@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interactive text analyzer</title>
+    <link rel="stylesheet" href="text.css">
+</head>
+<body>
+    <div class="analyzer-container">
+        <h1>text analyzer</h1>
+        <p class="subtitle">paste your paragraph below to analyze its composition instantly</p>
+        <textarea id="textinput" placeholder="start typing or paste content here"></textarea>
+        <div class="stats-grid">
+            <div class="stat-box">
+                <span class="stat-number" id="charCount">0</span>
+                <span class="stat-label">characters</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" id="wordcount">0</span>
+                <span class="stat-label">words</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number" id="readingtime">0s</span>
+                <span class="stat-label">reading time</span>
+            </div>
+        </div>
+        <div class="insights-panel">
+            <h3>text-insight</h3>
+            <p><strong>longest word</strong> <span id="longestword">-</span></p>
+        </div>
+    </div>
+    <script src="text.js" defer></script>
+</body>
+</html>
